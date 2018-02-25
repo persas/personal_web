@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad37c842-833a-4ad3-9952-204bed4938e6" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/htaccess.dms" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/sendEmail.php" afterPath="$PROJECT_DIR$/inc/sendEmail.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -24,18 +26,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="56" lean-forward="false" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sendEmail.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inc/sendEmail.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="68" column="2" lean-forward="false" selection-start-line="68" selection-start-column="2" selection-end-line="68" selection-end-column="2" />
+            <state relative-caret-position="519">
+              <caret line="587" column="118" lean-forward="false" selection-start-line="587" selection-start-column="118" selection-end-line="587" selection-end-column="118" />
               <folding />
             </state>
           </provider>
@@ -143,6 +135,8 @@
         <option value="$PROJECT_DIR$/css/base.css" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/recaptchalib.php" />
+        <option value="$PROJECT_DIR$/inc/sendEmail.php" />
       </list>
     </option>
   </component>
@@ -295,12 +289,12 @@
       <option name="presentableId" value="Default" />
       <updated>1519517631042</updated>
       <workItem from="1519517633363" duration="3885000" />
-      <workItem from="1519555016696" duration="7811000" />
+      <workItem from="1519555016696" duration="10309000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11696000" />
+    <option name="totallyTimeSpent" value="14194000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -471,18 +465,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/recaptchalib.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="128" column="2" lean-forward="false" selection-start-line="128" selection-start-column="2" selection-end-line="128" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/inc/sendEmail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="68" column="2" lean-forward="false" selection-start-line="68" selection-start-column="2" selection-end-line="68" selection-end-column="2" />
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="56" lean-forward="false" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+        <state relative-caret-position="519">
+          <caret line="587" column="118" lean-forward="false" selection-start-line="587" selection-start-column="118" selection-end-line="587" selection-end-column="118" />
           <folding />
         </state>
       </provider>

@@ -1,5 +1,15 @@
 ﻿<?php
 
+//Recaptcha library
+require_once "recaptchalib.php";
+
+//Public and Secret key
+$siteKey = "6LcEe0gUAAAAAI3t-usQkUlpSLdr3fXAtl3Ixkb6";
+$secret = "6LcEe0gUAAAAAMc2OdGV1Efbgl2WiVvE1jL-P7OS";
+
+//Check secret key
+$reCaptcha = new ReCaptcha($secret);
+
 // Replace this with your own email address
 $siteOwnersEmail = 'diegovillaveza@gmail.com';
 
@@ -23,6 +33,8 @@ if($_POST) {
 	if (strlen($contact_message) < 15) {
 		$error['message'] = "Please enter your message. It should have at least 15 characters.";
 	}
+
+
    // Subject
 	if ($subject == '') { $subject = "Contact Form Submission"; }
 
@@ -46,12 +58,26 @@ if($_POST) {
 
    if (!$error) {
 
-      ini_set("sendmail_from", $siteOwnersEmail); // for windows server
-      $mail = mail($siteOwnersEmail, $subject, $message, $headers);
+     if ($_POST["g-recaptcha-response"]) {
+         $response_captcha= $reCaptcha->verifyResponse(
+             $_SERVER["REMOTE_ADDR"],
+             $_POST["g-recaptcha-response"]
+         );
+     }
 
-		if ($mail) { echo "OK"; }
-      else { echo "Something went wrong. Please try again."; }
-		
+     if ($response_captcha != null && $response_captcha->success) {
+
+       ini_set("sendmail_from", $siteOwnersEmail); // for windows server
+       $mail = mail($siteOwnersEmail, $subject, $message, $headers);
+
+    if ($mail) { echo "OK"; }
+       else { echo "Something went wrong. Please try again."; }
+     }
+     else {
+       echo "Please confirm you are human!";
+     }
+
+
 	} # end if - no validation error
 
 	else {
@@ -59,7 +85,7 @@ if($_POST) {
 		$response = (isset($error['name'])) ? $error['name'] . "<br /> \n" : null;
 		$response .= (isset($error['email'])) ? $error['email'] . "<br /> \n" : null;
 		$response .= (isset($error['message'])) ? $error['message'] . "<br />" : null;
-		
+
 		echo $response;
 
 	} # end if - there was a validation error

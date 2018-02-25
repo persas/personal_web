@@ -29,6 +29,7 @@
    <!-- favicons
 	================================================== -->
 	<link rel="icon" type="image/png" href="favicon.png">
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 
 </head>
 
@@ -582,7 +583,9 @@
 	               </div>                       
                   <div class="form-field">
 	                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
-	               </div>                      
+	               </div><br />
+
+					<div class="g-recaptcha" data-sitekey="6LcEe0gUAAAAAI3t-usQkUlpSLdr3fXAtl3Ixkb6" data-theme="dark"></div>
                  <div class="form-field">
                      <button class="submitform">Submit</button>
                      <div id="submit-loader">
