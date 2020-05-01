@@ -39,17 +39,17 @@
 
 #portfolio-item-c1-1{
     height: 600px;
-    background-image: url(http://biblioteca.uoc.edu/sites/default/files/styles//public/ieee_xplore.jpg_1.png);
+    background-image: url(../images/portfolio/barcelona.jpg);
 }
 
 #portfolio-item-c1-2{
     height: 300px;
-    background-image: url(https://www.icfepp.org/frss_14_colorflames/images/SCITEPRESS%20LOGO.jpg);
+    background-image: url(../images/portfolio/prague.jpg);
 }
 
 #portfolio-item-c2-1{
     height: 900px;
-    background-image: url(https://www.solace-eu.net/fileadmin/_processed_/5/e/csm_upm_logo_91206f67af.jpg);
+    background-image: url(../images/portfolio/madrid.png);
 }
 
 .item-overlay{
